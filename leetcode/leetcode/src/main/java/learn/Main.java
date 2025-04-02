@@ -2,14 +2,12 @@ package learn;
 
 public class Main {
     public static void main(String[] args) {
-        HouseRobber houseRobber = new HouseRobber();
-        int[] nums = {1,2,3,1};
-        System.out.println(houseRobber.rob(nums));
-        nums = new int[]{2, 7, 9, 3, 1};
-        System.out.println(houseRobber.rob(nums));
-        nums = new int[]{1};
-        System.out.println(houseRobber.rob(nums));
-        nums = new int[]{1, 1, 3, 50, 5};
-        System.out.println(houseRobber.rob(nums));
+        ReversePolishNotation rpn = new ReversePolishNotation();
+        String[] tokens1 = {"2","1","+","3","*"};
+        String[] tokens2 = {"4","13","5","/","+"};
+        String[] tokens3 = {"10","6","9","3","+","-11","*","/","*","17","+","5","+"};
+        System.out.println(rpn.evalRPN(tokens1));
+        System.out.println(rpn.evalRPN(tokens2));
+        System.out.println(rpn.evalRPN(tokens3));
     }
 }
