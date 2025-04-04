@@ -9,18 +9,21 @@ public class Pow {
         }
     }
     public double myPower(double x, int n){
-        double result = x;
-        if (n < 0){
-            result = 1/x;
-            n++;
+        if (x == 1){
+            return 1;
         }
-        while (n > 1 || n < 0){
-            if (n > 1) {
+        double result = 1;
+        boolean nNotZero = true;
+        while (nNotZero){
+            if (n > 0) {
                 result *= x;
                 n--;
-            } else if (n < 0){
+            } else if (n < 0) {
                 result /= x;
                 n++;
+            }
+            if (n == 0){
+                nNotZero = false;
             }
         }
         return result;
