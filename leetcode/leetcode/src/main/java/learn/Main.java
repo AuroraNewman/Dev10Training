@@ -2,9 +2,16 @@ package learn;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedListCycle llc = new LinkedListCycle();
-        int[] nodes = {3,2,0,-4,2,0};
-        ListNode head = ListNode.generateListNodeFromArray(nodes);
-        System.out.println(llc.hasCycle(head));
+        BinaryConversion bc = new BinaryConversion();
+//        System.out.println(bc.binaryToInt("1000"));
+
+        int num = -1;
+        String number;
+        for (int i = 0; i < 10; i++){
+            number = bc.intToBinary(num);
+            System.out.println(number);
+            System.out.println(bc.binaryToInt(number));
+            num*=2;
+        }
     }
 }

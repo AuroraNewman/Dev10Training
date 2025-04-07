@@ -15,13 +15,7 @@ public class ValidParentheses {
             if (check == '(' || check == '{' || check == '['){
                 myStack.push(check);
             } else {
-                if (myStack.isEmpty()){
-                    return false;
-                } else if (check == ')' && myStack.pop() != '(') {
-                    return false;
-                } else if (check == '}' && myStack.pop() != '{') {
-                    return false;
-                } else if (check == ']' && myStack.pop() != '[') {
+                if (myStack.isEmpty() || check == ')' && myStack.pop() != '(' || check == '}' && myStack.pop() != '{' || check == ']' && myStack.pop() != '[') {
                     return false;
                 }
             }
