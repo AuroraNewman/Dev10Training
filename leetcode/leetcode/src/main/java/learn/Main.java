@@ -2,15 +2,9 @@ package learn;
 
 public class Main {
     public static void main(String[] args) {
-        RansomNote rn = new RansomNote();
-        String magazine = "fluffyfoofoo";
-        String ransomNote = "foofoofoo";
-        System.out.println(rn.canConstruct(ransomNote, magazine));
-        magazine = "slinkystairs";
-        ransomNote = "siksar";
-        System.out.println(rn.canConstruct(ransomNote, magazine));
-        magazine = "ab";
-        ransomNote = "aba";
-        System.out.println(rn.canConstruct(ransomNote, magazine));
+        LinkedListCycle llc = new LinkedListCycle();
+        int[] nodes = {3,2,0,-4,2,0};
+        ListNode head = ListNode.generateListNodeFromArray(nodes);
+        System.out.println(llc.hasCycle(head));
     }
 }
