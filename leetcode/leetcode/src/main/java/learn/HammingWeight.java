@@ -1,5 +1,5 @@
 package learn;
-
+//from https://leetcode.com/problems/number-of-1-bits/description
 public class HammingWeight {
     BinaryConversion binaryConversion = new BinaryConversion();
 
