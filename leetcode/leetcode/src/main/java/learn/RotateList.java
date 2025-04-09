@@ -1,7 +1,4 @@
 package learn;
-
-import java.util.ArrayList;
-
 //from https://leetcode.com/problems/rotate-list/description/
 public class RotateList {
     public ListNode rotateRight(ListNode head, int k) {

@@ -1,7 +1,5 @@
 package learn;
-
 import java.util.Stack;
-
 //from https://leetcode.com/problems/valid-parentheses/description/
 public class ValidParentheses {
     public boolean isValid(String s){

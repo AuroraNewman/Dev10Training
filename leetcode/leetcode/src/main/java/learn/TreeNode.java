@@ -1,7 +1,5 @@
 package learn;
-
-import com.sun.source.tree.Tree;
-
+//used in BinaryTree problems
 import java.util.LinkedList;
 import java.util.Queue;
 

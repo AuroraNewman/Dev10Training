@@ -1,5 +1,5 @@
 package learn;
-
+//used to support LL problems
 public class ListNode {
     int val;
     ListNode next;

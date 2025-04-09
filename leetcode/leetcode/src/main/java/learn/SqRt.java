@@ -1,5 +1,5 @@
 package learn;
-
+//https://leetcode.com/problems/sqrtx/description/
 public class SqRt {
     public int mySqrt(int x) {
         if (x == 0 || x == 1){
