@@ -12,24 +12,16 @@ public class LongestConsecutiveSequence {
         if (nums.length == 0){
             return 0;
         }
-        int min = 1000000000;
-        int max = -1000000000;
         HashSet<Integer> set = new HashSet<>();
         for (int number : nums){
             set.add(number);
-            if (number < min){
-                min = number;
-            }
-            if (number > max){
-                max = number;
-            }
         }
         int currentStreak = 1;
         int maxStreak = 1;
         for (int num : set){
             int number = num;
             currentStreak = 1;
-            boolean streak = false;
+            boolean streak;
             if (!set.contains(number - 1)) {
                 streak = true;
                 while (streak) {
@@ -43,19 +35,6 @@ public class LongestConsecutiveSequence {
                         streak = false;
                     }
                 }
-
-
-//                if (set.contains(number + 1)) {
-//                    currentStreak++;
-////                    set.remove(number);
-//                    number = number + 1;
-//                    if (currentStreak > maxStreak){
-//                        maxStreak = currentStreak;
-//                    }
-//                } else {
-////                    set.remove(number);
-//                    streak = false;
-//                }
             }
         }
         return maxStreak;
