@@ -12,27 +12,7 @@ https://leetcode.com/problems/average-of-levels-in-binary-tree/description/?envT
 public class AverageLevelsinBinaryTree {
     public List<Double> averageOfLevels(TreeNode root) {
 //        search breadth first
-        List<Double> result = new ArrayList<>();
-        if (root == null){
-            return result;
-        }
-        Queue<TreeNode> nodeQueue = new LinkedList<>();
-        nodeQueue.offer(root);
-        while(!nodeQueue.isEmpty()){
-            double sum = 0;
-            int n = nodeQueue.size();;
-            for (int i = 0; i < n; i++){
-                TreeNode node = nodeQueue.poll();
-                sum+= node.val;
-                if (node.left!=null){
-                    nodeQueue.offer(node.left);
-                }
-                if (node.right!=null){
-                    nodeQueue.offer(node.right);
-                }
-                result.add(sum / n);
-            }
-        }
-        return result;
+
+        return null;
     }
 }
